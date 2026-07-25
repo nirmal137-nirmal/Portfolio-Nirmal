@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> My Portfolio | Home</title>
+  <meta name="description" content="Professional Java Full Stack Developer portfolio website." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div class="page-loader" id="page-loader">
+    <div class="loader-ring"></div>
+  </div>
+
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">My Portfolio</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="skills.html">Skills</a>
+        <a class="nav-link" href="achievements.html">Achievements</a>
+        <a class="nav-link" href="resume.html">Resume</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="container hero-grid">
+        <div class="hero-image reveal">
+          <img src="images/icons/profile.png" alt="Profile" />
+        </div>
+        <div class="hero-content reveal">
+          <span class="eyebrow">Hello, I'm</span>
+          <h1>Nirmal Fayake</h1>
+          <h2><span class="typing-text" data-words="Java Full Stack Developer, Backend Specialist, Problem Solver"></span><span class="cursor">|</span></h2>
+          <p>I'm a passionate Java Full Stack Developer focused on building scalable, modern, and user-centered web applications with clean architecture and practical problem-solving skills.</p>
+          <div class="hero-buttons">
+            <a class="btn primary" href="resume.html">View Resume</a>
+            <a class="btn secondary" href="contact.html">Contact Me</a>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-indicator" href="#about">Scroll Down</a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-tag">About Me</span>
+          <h2>Building modern digital experiences with Java.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="glass-card reveal">
+            <h3>Profile Summary</h3>
+            <p>I enjoy transforming ideas into responsive, maintainable web solutions with enterprise-grade backend systems. My focus is on creating reliable applications that are both elegant for users and efficient for teams.</p>
+          </div>
+          <div class="glass-card reveal">
+            <h3>Career Objective</h3>
+            <p>To grow as a Java Full Stack Developer, contribute to impactful projects, and continuously enhance my skills in backend engineering, cloud-ready architecture, and professional software delivery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-bg">
+      <div class="container">
+        <div class="grid-3">
+          <article class="glass-card reveal">
+            <h3>Education</h3>
+            <p>Bachelor's Degree in Bachelor's of Computer Application </p>
+            <span>2019 - 2022</span>
+          </article>
+          <article class="glass-card reveal">
+            <h3>Education</h3>
+            <p>Master's Degree in Master of Computer Application </p>
+            <span>2022 - 2024</span>
+          </article>
+          <article class="glass-card reveal">
+            <h3>Experience</h3>
+            <p>Java Backend Internship and hands-on project development with Spring Boot, REST APIs, and database integration.</p>
+            <span>Feb-2024 -  May-2024</span>
+          </article>
+          <article class="glass-card reveal">
+            <h3>Core Strengths</h3>
+            <p>Full-stack development, API design, problem solving, database handling, and collaboration.</p>
+            <span>Continuous Learning</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card reveal">
+            <h3 class="counter" data-target="12">0</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-card reveal">
+            <h3 class="counter" data-target="5">0</h3>
+            <p>Certifications</p>
+          </div>
+          <div class="stat-card reveal">
+            <h3 class="counter" data-target="1500">0</h3>
+            <p>Hours of Coding</p>
+          </div>
+          <div class="stat-card reveal">
+            <h3 class="counter" data-target="98">0</h3>
+            <p>Problem Solving Score</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p>© 2026 My Portfolio. All rights reserved.</p>
+      </div>
+      <div class="social-links">
+        <a href="mailto:nirmal.fayake13@gmail.com" aria-label="Gmail">✉️</a>
+        <a href="https://www.linkedin.com/in/nirmal-fayake-165bb1223" target="_blank" rel="noreferrer" aria-label="LinkedIn">💼</a>
+        <a href="https://github.com/nirmal137-nirmal" target="_blank" rel="noreferrer" aria-label="GitHub">🐙</a>
+      </div>
+      <a href="#top" class="back-top" id="back-top">Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animation.js"></script>
+</body>
+</html>

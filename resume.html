@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/resume.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div class="page-loader" id="page-loader">
+    <div class="loader-ring"></div>
+  </div>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">My Portfolio</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="skills.html">Skills</a>
+        <a class="nav-link" href="achievements.html">Achievements</a>
+        <a class="nav-link active" href="resume.html">Resume</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero compact-hero">
+      <div class="container reveal">
+        <span class="section-tag">Resume</span>
+        <h1>Professional Profile & Experience</h1>
+        <div class="resume-actions">
+          <a class="btn primary" href="resume/Resume.pdf" download>Download Resume</a>
+          <button class="btn secondary" id="print-btn" type="button">Print Resume</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container resume-layout">
+        <div class="resume-card reveal">
+          <h2>Profile Summary</h2>
+          <p>Dedicated Java Full Stack Developer with a strong foundation in Java, Spring Boot, REST APIs, HTML, CSS, JavaScript, and MySQL. Passionate about writing scalable, maintainable software and growing through real-world development challenges.</p>
+        </div>
+
+        <div class="resume-card reveal">
+          <h2>Graduation</h2>
+          <div class="timeline-item">
+            <span class="timeline-date">2019 - 2022</span>
+            <h3>Bachelor's Of Computer Application</h3>
+            <p>Focused on software engineering, web technologies, databases, and core programming concepts.</p>
+          </div>
+        </div>
+
+        <div class="resume-card reveal">
+          <h2>Post-Graduation</h2>
+          <div class="timeline-item">
+            <span class="timeline-date">2022 - 2024</span>
+            <h3>Master's Of Computer Application</h3>
+            <p>Focused on software engineering, web technologies, databases, and core programming concepts.</p>
+          </div>
+        </div>
+
+        <div class="resume-card reveal">
+          <h2>Technical Skills</h2>
+          <ul class="skill-list">
+            <li>Core Java</li><li>Advanced Java</li><li>Spring Boot</li><li>Spring MVC</li><li>REST API</li><li>Hibernate</li><li>JPA</li><li>MySQL</li><li>Git & GitHub</li><li>HTML/CSS/JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="resume-card reveal">
+          <h2>Projects</h2>
+          <div class="timeline-item">
+            <span class="timeline-date">2026</span>
+            <h3>Portfolio Website</h3>
+            <p>Built a premium responsive portfolio using HTML5, CSS3, and JavaScript with interactive UI and smooth animations.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2025</span>
+            <h3>Policy Management System</h3>
+            <p>Developed PolicyTrust, a comprehensive insurance management system 
+               designed to streamline customer onboarding, scheme allocation, policy handling, claim processing, 
+               and feedback management. The platform enables smooth workflow automation for administrators 
+               and provides a seamless experience for customers. 
+               <ul>Key Features:  
+               Customer Management, Scheme Management, Policy Handling, Claim Processing, Feedback 
+               Management.</ul></p>
+          </div>
+        </div>
+
+        <div class="resume-card reveal">
+          <h2>Experience</h2>
+          <div class="timeline-item">
+            <span class="timeline-date">Feb 2024 - May 2024</span>
+            <h3>Java Backend Intern</h3>
+            <p>Worked on backend modules, API development, debugging, and hands-on implementation of Java-based solutions.</p>
+          </div>
+        </div>
+
+        <div class="resume-card reveal">
+          <h2>Certifications</h2>
+          <ul class="skill-list">
+            <li>Advanced Java Certification</li>
+            <li>Infosys Springboard Internship Credential</li>
+            <li>Java Backend Development Training</li>
+          </ul>
+        </div>
+
+        <div class="resume-card reveal">
+          <h2>Strengths</h2>
+          <ul class="skill-list">
+            <li>Quick Learner</li>
+            <li>Team Collaboration</li>
+            <li>Problem Solver</li>
+            <li>Attention to Detail</li>
+            <li>Strong Communication</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p>© 2026 My Portfolio. All rights reserved.</p>
+      </div>
+      <div class="social-links">
+        <a href="mailto:yourmail@example.com" aria-label="Email">✉️</a>
+        <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">💼</a>
+        <a href="https://github.com" target="_blank" aria-label="GitHub">🐙</a>
+      </div>
+      <a href="#top" class="back-top" id="back-top">Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animation.js"></script>
+</body>
+</html>

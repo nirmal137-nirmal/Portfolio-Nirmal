@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div class="page-loader" id="page-loader">
+    <div class="loader-ring"></div>
+  </div>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">My Portfolio</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="skills.html">Skills</a>
+        <a class="nav-link" href="achievements.html">Achievements</a>
+        <a class="nav-link" href="resume.html">Resume</a>
+        <a class="nav-link active" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero compact-hero">
+      <div class="container reveal">
+        <span class="section-tag">Gallery</span>
+        <h1>Moments From My Learning & Projects</h1>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="certificates">Certificates</button>
+          <button class="filter-btn" data-filter="projects">Projects</button>
+          <button class="filter-btn" data-filter="events">Events</button>
+          <button class="filter-btn" data-filter="internship">Internship</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container gallery-grid">
+        <figure class="gallery-item reveal" data-category="certificates"><img src="images/gallery/Advanced%20Certificate.png" alt="Advanced Certificate" /></figure>
+        <figure class="gallery-item reveal" data-category="certificates"><img src="images/gallery/Advanced%20Java%20Certificate.png" alt="Advanced Java Certificate" /></figure>
+        <figure class="gallery-item reveal" data-category="certificates"><img src="images/gallery/BCA%20Last%20Semester%20Marksheet.jpeg" alt="BCA Last Semester Marksheet" /></figure>
+        <figure class="gallery-item reveal" data-category="internship"><img src="images/gallery/Internshi%20Experience%20Letter.png" alt="Internship Experience Letter" /></figure>
+        <figure class="gallery-item reveal" data-category="certificates"><img src="images/gallery/Java%20Certificate.png" alt="Java Certificate" /></figure>
+        <figure class="gallery-item reveal" data-category="certificates"><img src="images/gallery/MCA%20Last%20Sem%20Marksheet.jpeg" alt="MCA Last Semester Marksheet" /></figure>
+        <figure class="gallery-item reveal" data-category="certificates"><img src="images/gallery/McKinsey%20Certificate.png" alt="McKinsey Certificate" /></figure>
+      </div>
+    </section>
+  </main>
+
+  <div class="gallery-modal" id="gallery-modal" aria-hidden="true">
+    <button class="modal-close" id="modal-close">×</button>
+    <button class="modal-nav prev" id="prev-btn">‹</button>
+    <img id="modal-image" src="" alt="Expanded gallery item" />
+    <button class="modal-nav next" id="next-btn">›</button>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p>© 2026 My Portfolio. All rights reserved.</p>
+      </div>
+      <div class="social-links">
+        <a href="mailto:yourmail@example.com" aria-label="Email">✉️</a>
+        <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">💼</a>
+        <a href="https://github.com" target="_blank" aria-label="GitHub">🐙</a>
+      </div>
+      <a href="#top" class="back-top" id="back-top">Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/animation.js"></script>
+</body>
+</html>

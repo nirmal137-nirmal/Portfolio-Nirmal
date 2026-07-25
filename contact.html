@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div class="page-loader" id="page-loader">
+    <div class="loader-ring"></div>
+  </div>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">My Portfolio</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="skills.html">Skills</a>
+        <a class="nav-link" href="achievements.html">Achievements</a>
+        <a class="nav-link" href="resume.html">Resume</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link active" href="contact.html">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero compact-hero">
+      <div class="container reveal">
+        <span class="section-tag">Contact</span>
+        <h1>Let's Connect & Build Something Great</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="contact-info glass-card reveal">
+          <h3>Contact Information</h3>
+          <p><strong>Phone:</strong> +91 9753570572</p>
+          <p><strong>Email:</strong> nirmal.fayake13@gmail.com</p>
+          <p><strong>LinkedIn:</strong> www.linkedin.com/in/nirmal-fayake-165bb1223</p>
+          <p><strong>GitHub:</strong> https://github.com/nirmal137-nirmal</p>
+          <p><strong>Location:</strong> Indore, India</p>
+        </div>
+
+        <form class="contact-form glass-card reveal" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" />
+            <small class="error-message"></small>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Your email" />
+            <small class="error-message"></small>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="Subject" />
+            <small class="error-message"></small>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+            <small class="error-message"></small>
+          </div>
+          <button type="submit" class="btn primary">Send Message</button>
+          <p class="form-success" id="form-success"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p>© 2026 My Portfolio. All rights reserved.</p>
+      </div>
+      <div class="social-links">
+        <a href="mailto:yourmail@example.com" aria-label="Email">✉️</a>
+        <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">💼</a>
+        <a href="https://github.com" target="_blank" aria-label="GitHub">🐙</a>
+      </div>
+      <a href="#top" class="back-top" id="back-top">Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/animation.js"></script>
+</body>
+</html>

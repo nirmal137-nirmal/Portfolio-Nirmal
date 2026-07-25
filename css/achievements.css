@@ -1,0 +1,19 @@
+.achievements-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.achievement-card {
+  border-top: 4px solid var(--primary);
+}
+
+.achievement-icon {
+  font-size: 1.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.achievement-card span {
+  display: inline-block;
+  margin-top: 0.9rem;
+  color: var(--primary);
+  font-weight: 700;
+}
